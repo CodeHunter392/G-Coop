@@ -1,0 +1,93 @@
+.img-profile {
+  border: 4px solid #f1f2f7;
+  width: 140px;
+  height: 140px;
+}
+
+.img-holder {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* */
+.prop-nom {
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.prop-niveau {
+  text-transform: uppercase;
+}
+
+.hist-statement {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #e43f26;
+  border-radius: 8px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.unselected {
+  color: #7a7676;
+  padding: 5px;
+  font-weight: bold;
+}
+.niveau {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.info-details {
+  padding-left: 5px;
+  color: #07706e;
+}
+
+.payment-section {
+  height: 615px;
+  overflow-x: scroll;
+}
+
+@media (min-width: 100px) and (max-width: 990px) {
+  .payment-section {
+    height: 100%;
+  }
+}
+
+.rest-panel {
+  background-color: #e43f26;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+}
+
+.rest-panel p:first-child,
+.rest-panel p:last-child {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.link.choosed,
+.link.choosed:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.link.unchoosed,
+.link.unchoosed:hover {
+  color: #7a7676;
+}
+
+.recu-info {
+  font-weight: bold;
+  color: #e43f26;
+}
+
+.recu-mois {
+  margin-right: 10px;
+}

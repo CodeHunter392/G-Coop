@@ -1,0 +1,973 @@
+.disabled {
+    pointer-events:none;
+    opacity:0.6;
+}
+
+.remove-link:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.remove-link{
+    color:#7A7676;
+}
+
+.tag{
+    background-color: #28A745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    font-size: 15px;
+    margin-top: 2px;
+    display:inline-block;
+}
+
+.custom-label{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    padding: 4px 3px;
+    margin-top: 3px;
+    border-radius: 10px;
+    display: block;
+}
+
+.custom-label-warning{
+    background-color: #ffc107;
+}
+
+.custom-label-danger{
+    background-color: #dc3545;
+}
+
+.custom-checkbox{
+    width: 20px;
+    height: 15px;
+}
+
+/*---------------------------
+    Profile Picture
+----------------------------*/
+
+.profile-pic-container {
+    
+    width: 248px;
+    height: 230px;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    margin-left: 10px;
+    background: white;
+    float:left;
+    margin-bottom: 10px;
+}
+
+.btn-success-1 {
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color:#094d58; 
+    border-color:#094d58; 
+    padding: 12px 20px;
+}
+
+.btn-success-1:hover {
+    border: 3px solid #094d58;
+    color: #094d58;
+    background-color:#fff; 
+    
+}
+
+/*-------------------------------------
+    Name - Numero - Niveau
+----------------------------------------*/
+
+
+
+
+
+.panel-2 {
+
+    width: 110%;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 230px;
+    margin-left: 10px;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;
+    font-weight: bold;
+    
+       
+    
+}
+
+
+.panel-body-si {
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 2;      
+    letter-spacing: 1px;   
+}
+
+
+
+/*---------------------------
+    TABS-CONTAINER
+----------------------------*/
+
+
+.tabs-container {
+    display: inline-block;
+    width: 100%;
+    flex-wrap: wrap;
+    border: 1.5px solid #007071; 
+    border-radius: 5px; 
+    overflow: hidden;
+    background-color: white;  
+    
+
+}
+
+/* Styles for individual tabs */
+.tab {
+    font-size: 16px;
+    font-weight: bold;  
+    color: #ffffff;
+    background-color: #007071;
+    text-decoration: none;
+    border-right: 2px solid #ffffff; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tab:last-child {
+    border-right: none; 
+}
+
+.tab:hover {
+    background-color: #005353;
+}
+
+.tab.active {
+    background-color: #ffffff;
+    color: #094d58;
+}
+
+/*---------------------------
+    Admission Buttons
+----------------------------*/
+
+/* Styles for admission buttons */
+
+.wrapper-admission {
+
+    padding: 0px;
+    margin-bottom: 10px;
+
+
+}
+.admission-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+    padding: 0px; 
+}
+
+.admission-box {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background: white;
+    color: #007071;
+    padding: 20px 25px;
+    border-radius: 0px;
+    border: 1px solid #007071;
+    flex-grow: 1; 
+}
+
+.admission-box.active {
+    background: linear-gradient(90deg, #007071, #01e8cd);
+    color: #ffffff;
+    border: 1px solid #094d58;
+    pointer-events: none;
+}
+
+.admission-box:hover {
+    text-decoration: none;
+    background: linear-gradient(90deg, #01e8cd, #007071);
+    color: #fff;
+    border: 1px solid #094d58;
+}
+
+.admission-box.active:hover {
+    background: linear-gradient(90deg, #007071, #01e8cd);
+    color: #ffffff;
+    border: 1px solid #094d58;
+}
+
+/*------------------------------------
+    container body left
+------------------------------------*/
+
+.contain-container-bleft {
+    float: left;
+    border-radius: 5px;
+    /* border: 1px solid #094d58;  */
+    width: 32%;
+    margin-left: 10px;
+    flex: 1;
+    display: grid;
+}
+
+
+/*------------------------------------
+    Info Etudiant -> Gestion des Att
+------------------------------------*/
+.col-md-12-3 {
+    display: grid;
+    
+}
+.col-md-12-4 {
+    display: grid;
+    border: none;
+}
+
+.col-md-info-attes {
+
+    float: left;
+    
+    
+    
+}
+
+.panel-info {
+
+    width: 100%;
+    border: 1px;
+    
+}
+
+.panel-body-info {
+
+    
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    
+    
+    
+}
+
+/*------------------------------------
+    Statistique d'absence & retards
+------------------------------------*/
+
+.panel-statis {
+    
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;
+    
+    
+    
+}
+
+/*------------------------------------
+    container body right
+------------------------------------*/
+
+.spacing-table-right {
+
+    padding-right: 10px;
+}
+
+.contain-container-bright {
+    display: grid;
+    float: right;
+    border-radius: 5px;
+    /* border: 1px solid #094d58;  */
+    width: 60%;
+    margin-left: 10px;
+    flex: 1;
+}
+
+
+.row-historique {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    float: right;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;   
+    margin-bottom: 10px;
+
+}
+
+.btn-primary-inscri {
+    color: #ffffff;
+    background-color:#EC9820; 
+    border-color:#EC9820; 
+    float: right; 
+    margin-right: 20px;
+}
+
+.btn-primary-inscri:hover {
+    color: #ffffff;
+    background-color:#ecc720; 
+    border-color:#ecc720; 
+}
+
+/*-----------------------
+    Remarques Styles
+-----------------------*/
+
+
+.panel-remarque {
+
+    float: right;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+.btn-success {
+    font-size: 1em; 
+    transition: font-size 0.2s; 
+}
+
+/*-------------------------------
+    Media query for tablets 
+---------------------------------*/
+
+@media only screen and (max-width: 1024px) {
+
+    .panel-1 {
+
+        display: grid;
+        justify-content: center;
+        align-items: center; 
+    
+    }
+    .profile-pic-container {
+    
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 250px;
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        margin-left: 1px;
+        background: white;
+        margin-bottom: 10px;
+    }
+    
+    
+    .panel-2 {
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        display: grid;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        padding-top: 18px;
+        height: auto;
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        background: white;
+        font-weight: bolder;
+    }
+    
+    
+    
+    .panel-body-si {
+        justify-content: center;
+        align-items: center;
+            display: grid;
+            padding: 5px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+    
+    .tabs-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: grid;
+        border: 1.5px solid #007071; 
+        border-radius: 5px; 
+        overflow: hidden;
+        background-color: white;  
+        
+    
+    }
+    .admission-container {
+        display: grid;
+        flex-wrap: nowrap;
+        gap: 0px;
+        padding: 0px; 
+    }
+        
+    .wrapper-admission {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .contain-container-bleft {
+        display: grid;
+        width: 100%;
+        
+    }
+    
+    .panel-info {
+        padding-right: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .panel-statis {
+        margin-bottom: 10px;
+        display: grid;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    
+    .contain-container-bright {
+        width: 100%;
+        order: -1;
+        border: none;
+    }
+    
+    .row-historique {
+        border: none;
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    
+    }
+    
+    .spacing-table-right {
+        padding-right: 10px;
+        width: 100%;
+        border: none;
+    }
+        
+    .panel-historique {
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        float: right;
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        background: white;   
+        margin-bottom: 10px;  
+            }
+    .panel {
+    
+        display: grid;
+    }
+        
+    .col-md-info-attes {
+        display: grid;
+    }
+        
+    .col-md-12.attest-dropdown-btn.dropdown {
+        margin-bottom: 20px;
+        width:100%;
+    }
+    
+    
+    
+    
+}
+
+@media only screen and (min-width: 400px) and (max-width: 560px) {
+    .pull-right {
+        font-weight: bold;
+        font-size: 17px;
+      
+    }
+    #attest-dropdown-btn-id{
+        font-size: 14px !important;
+    }
+    .btn-success{
+        font-size: 10px;
+        justify-content: center;
+        margin-right: 5%;
+        padding: 15px 10px;
+    
+      }
+    .panel-1 {
+    
+        display: grid;
+        justify-content: center;
+        align-items: center; 
+        margin-right: 5%;
+        margin-left: 5%;
+    
+    }
+    .profile-pic-container {
+    
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 250px;
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        margin-left: 10px;
+        background: white;
+        margin-bottom: 10px;
+    }
+    
+    
+    .panel-2 {
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        display: grid;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-bottom: 10px;
+        margin-left: 2%;
+        padding-top: 18px;
+        height: auto;
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        background: white;
+        font-weight: bolder;
+    }
+    
+    /*---------------------------
+        TABS-CONTAINER
+    ----------------------------*/
+    .tabs-container {
+        
+        justify-content: center;
+        align-items: center;
+        width: 428px;
+        display: grid;
+        border: 1.5px solid #007071; 
+        border-radius: 5px; 
+        background-color: white; 
+        padding-left: 15%;
+        padding-right: 15%; 
+    
+    .panel-body-si {
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            padding: 5px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+    
+    
+    }
+    .admission-container {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        flex-wrap: nowrap;
+        gap: 0px;
+        padding: 0px; 
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+        
+    .wrapper-admission {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 10px;
+        
+        
+    }
+    
+    .contain-container-bleft {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+    .panel-info {
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .panel-statis {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        display: grid;
+        width: 95%;
+        
+        
+        
+    }
+    
+    .contain-container-bright {
+        
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        display: grid;
+        border: none;
+    }
+    
+    .row-historique {
+        
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        border: none;
+        width: 100%;
+        margin-bottom: 5px;
+        padding-left: 6%;
+        padding-right: 6%;
+    
+    }
+    
+    .spacing-table-right {
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        width: 100%;
+        border: none;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+        
+    .panel-historique {
+        
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        float: right;
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        background: white;   
+        margin-bottom: 10px;  
+            }
+    /* .panel {
+    
+        display: grid;
+    }
+        
+    .col-md-info-attes {
+        display: grid;
+    } */
+       
+    
+    .panel .col-md-info-attes {
+        display: grid;
+    }
+    .col-md-12.attest-dropdown-btn.dropdown {
+        margin-bottom: 20px;
+        width:100%;
+    }
+    .col-md-12 {
+        width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
+    
+    }
+    
+    .col-md-12-4 {
+        display: grid;
+        padding-left: 6%;
+        padding-right: 6%;
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    
+    .panel-remarque {
+    
+        float: right;
+        margin-top: 10px;
+        
+        border: 1px solid #094d58;
+        border-radius: 5px;
+        background: white;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        
+        
+    }
+
+    .btn-primary-inscri {
+        font-size: 13px;
+    }
+    
+    .remove-link{
+        font-size: 16px;
+    }
+    
+    
+    
+    
+    
+}
+    
+
+@media only screen and (max-width: 399px) {
+        
+    
+
+    .pull-right {
+        font-weight: bold;
+        font-size: 17px;
+        
+    }
+
+  .btn-success{
+    font-size: 10px;
+    justify-content: center;
+    margin-right: 10%;
+    padding-right: 10px;
+
+  }
+.panel-1 {
+
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+.profile-pic-container {
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    margin-left: 1px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+
+.panel-2 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 18px;
+    height: auto;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;
+    font-weight: bolder;
+}
+
+/*---------------------------
+    TABS-CONTAINER
+----------------------------*/
+.tabs-container {
+    
+    justify-content: center;
+    align-items: center;
+    width: 428px;
+    display: grid;
+    border: 1.5px solid #007071; 
+    border-radius: 5px; 
+    background-color: white; 
+    padding-left: 150px;
+    padding-right: 150px; 
+
+.panel-body-si {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding: 5px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+
+}
+.admission-container {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    flex-wrap: nowrap;
+    gap: 0px;
+    padding: 0px; 
+    margin-right: 10%;
+    margin-left: 10%;
+}
+    
+.wrapper-admission {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.contain-container-bleft {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.panel-info {
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.panel-statis {
+    justify-content: center;
+    margin-bottom: 10px;
+    display: grid;
+    width: 95%;
+    
+    
+    
+}
+
+.contain-container-bright {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit:contain;
+    
+    border: none;
+}
+
+.row-historique {
+    
+    text-align: justify;
+    
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.spacing-table-right {
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    width: 100%;
+    border: none;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+    
+.panel-historique {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    float: right;
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;   
+    margin-bottom: 10px;  
+        }
+/* .panel {
+
+    display: grid;
+}
+    
+.col-md-info-attes {
+    display: grid;
+} */
+   
+
+.panel .col-md-info-attes {
+    display: grid;
+}
+.col-md-12.attest-dropdown-btn.dropdown {
+    margin-bottom: 20px;
+    width:100%;
+}
+.col-md-12 {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+.col-md-12-4 {
+    display: grid;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.panel-remarque {
+
+    float: right;
+    margin-top: 10px;
+    
+    border: 1px solid #094d58;
+    border-radius: 5px;
+    background: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+
+
+
+}

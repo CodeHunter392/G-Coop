@@ -1,0 +1,42 @@
+.tab {
+    margin: 10px; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tab th, .tab td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tab th {
+    background-color: #f2f2f2;
+}
+
+.tab th:first-child, .tab td:first-child {
+    text-align: center;
+}
+
+.tab .btn {
+    margin: 2px;
+}
+
+.tab .btn-check-all,
+.tab .btn-uncheck-all {
+    float: right;
+}
+
+.tab .btn-checkc,
+.tab .btn-uncheckc {
+    float: right;
+}
+
+.tab .success,
+.tab .error {
+    text-align: center;
+}
+
+.header th {
+    text-align: center;
+}
