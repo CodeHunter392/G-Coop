@@ -75,17 +75,4 @@ Route::group([
         }
     );
 });
-Route::group([
-    //pour gérer les projets
-    "middleware" => ["auth"],
-    ], function () {
-    Route::group(
-        [
-            "prefix" => "Coopératives",
-        ],
-        function () {
-            Route::get("/liste", CooperativeAdminComponent::class)->name('coop.index');
-        }
-    );
-});
-require __DIR__ . '/auth.php';
+
