@@ -35,6 +35,35 @@ Route::get("/",function(){
 //     return view("auth.register_coop");
 // })->name('inscription');
 
+
+Route::group([
+    //pour gérer les programmes
+    "middleware" => ["auth"],
+    ], function () {
+    Route::group(
+        [
+            "prefix" => "programmes",
+        ],
+        function () {
+            Route::get("/liste", ProgrammeComponent::class)->name('programme.index');
+            Route::get("/ligne", LigneProgrammeComponent::class)->name('ligneprogramme.index');
+        }
+    );
+});
+Route::group([
+    //pour gérer les projets
+    "middleware" => ["auth"],
+    ], function () {
+    Route::group(
+        [
+            "prefix" => "Coopératives",
+        ],
+        function () {
+            Route::get("/liste", CooperativeAdminComponent::class)->name('coop.index');
+        }
+    );
+});
+
 Route::get("/inscription",RegisterComponent::class)->middleware('guest')->name('inscription');
 Route::get("/testwelcome",function(){
     return view("testWelcome");
@@ -45,7 +74,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
 
 
 Route::group([
@@ -61,18 +89,4 @@ Route::group([
         }
     );
 });
-Route::group([
-    //pour gérer les programmes
-    "middleware" => ["auth"],
-    ], function () {
-    Route::group(
-        [
-            "prefix" => "programmes",
-        ],
-        function () {
-            Route::get("/liste", ProgrammeComponent::class)->name('programme.index');
-            Route::get("/ligne", LigneProgrammeComponent::class)->name('ligneprogramme.index');
-        }
-    );
-});
-
+require __DIR__ . '/auth.php';
